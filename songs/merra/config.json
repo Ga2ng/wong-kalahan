@@ -1,0 +1,16 @@
+{
+  "id": "merra",
+  "title": "Merra",
+  "artist": "COLORCODE",
+  "layout": "split",
+  "theme": "dark",
+  "offset": 0.0,
+  "fps": 30,
+  "cover": "cover.jpeg",
+  "background": null,
+  "font": null,
+  "lyrics": "lyrics.json",
+  "lyrics_aligned": "lyrics_aligned.json",
+  "background_mode": "static",
+  "effects": ["glow"]
+}

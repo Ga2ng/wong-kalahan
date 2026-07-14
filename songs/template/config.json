@@ -1,0 +1,16 @@
+{
+  "id": "template",
+  "title": "Your Song Title",
+  "artist": "Your Artist",
+  "layout": "split",
+  "theme": "dark",
+  "offset": 0.0,
+  "fps": 30,
+  "cover": "cover.jpeg",
+  "background": null,
+  "font": null,
+  "lyrics": "lyrics.json",
+  "lyrics_aligned": null,
+  "background_mode": "static",
+  "effects": []
+}

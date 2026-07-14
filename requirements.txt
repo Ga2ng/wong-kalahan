@@ -1,0 +1,11 @@
+# Pixel Lyrics Engine — Terminal TUI (rich + Pillow truecolor ASCII)
+rich
+pydantic
+typer
+Pillow
+numpy
+pygame
+pydub
+loguru
+orjson
+faster-whisper

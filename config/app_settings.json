@@ -1,0 +1,10 @@
+{
+  "fps": 30,
+  "default_theme": "dark",
+  "window_width": 100,
+  "window_height": 40,
+  "ascii_width": 70,
+  "default_layout": "split",
+  "countdown_seconds": 3,
+  "audio_offset": 0.0
+}
