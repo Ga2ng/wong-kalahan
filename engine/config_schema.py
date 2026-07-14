@@ -39,10 +39,16 @@ class SongConfig(pydantic.BaseModel):
 
     # Optional with sensible fallbacks
     artist: str = "Unknown Artist"
+    artist_label: Optional[str] = None
+    album: Optional[str] = None
+    about: Optional[str] = None
+    monthly_listeners: Optional[str] = None
     theme: str = "default"
     offset: float = 0.0
     fps: int = 30
     cover: Optional[str] = None
+    left_section: Optional[str] = None   # image for the left/rain column
+    about_image: Optional[str] = None     # image for the about panel
     background: Optional[str] = None
     font: Optional[str] = None
     background_mode: str = "static"

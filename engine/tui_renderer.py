@@ -40,6 +40,23 @@ def _enable_vt() -> None:
         pass
 
 
+def _osc_set_bg(hex_color: str) -> None:
+    """Tint the terminal background via OSC 11 (works in conhost/WT)."""
+    try:
+        sys.stdout.write(f"\x1b]11;{hex_color}\x07")
+        sys.stdout.flush()
+    except Exception:  # noqa: BLE001
+        pass
+
+
+def _osc_reset_bg() -> None:
+    try:
+        sys.stdout.write("\x1b]111\x07")
+        sys.stdout.flush()
+    except Exception:  # noqa: BLE001
+        pass
+
+
 def render(
     song: Song,
     console: Console,
@@ -49,6 +66,7 @@ def render(
     countdown: bool = True,
     duration: float | None = None,
     beat_provider=None,
+    start_offset: float = 0.0,
 ) -> None:
     _enable_vt()
     cfg = song.config
@@ -59,6 +77,7 @@ def render(
     LayoutCls = LayoutRegistry.get(cfg.layout)
     ThemeCls = ThemeRegistry.get(cfg.theme)
     theme = ThemeCls()
+    _osc_set_bg(theme.bg)  # tint terminal background (e.g. maroon for merra)
 
     cover = song.cover_path()
     art_small: list[str] = []
@@ -77,7 +96,10 @@ def render(
 
     term_w, term_h = shutil.get_terminal_size((100, 40))
 
-    clock = AudioClock(offset=cfg.offset) if audio else ClockSource(offset=cfg.offset)
+    # start_offset: begin playback + lyrics from a given position (e.g. 1:30)
+    eff_offset = cfg.offset + start_offset
+
+    clock = AudioClock(offset=eff_offset) if audio else ClockSource(offset=eff_offset)
 
     if audio:
         import pygame
@@ -96,14 +118,14 @@ def render(
     if audio:
         import pygame
         if song.audio_path() and pygame.mixer.get_init():
-            pygame.mixer.music.play()
+            pygame.mixer.music.play(start=max(0.0, start_offset))
     clock.start()
     last = time.perf_counter()
     try:
         # No alternate screen (screen=False) -> safest for conhost/PowerShell
         # where the VT alternate buffer is unreliable. transient=False keeps
         # the final frame visible instead of wiping it on exit.
-        with Live(console=console, screen=False, auto_refresh=False, transient=False) as live:
+        with Live(console=console, screen=True, auto_refresh=True, transient=False) as live:
             while True:
                 t = clock.time()
                 if duration and t >= duration:
@@ -122,13 +144,16 @@ def render(
                     active_line_index=idx, total_lines=len(sync.lines),
                     active_word_index=word_idx, progress=sync.progress(t),
                     ascii_art=art_small, full_ascii=art_full,
+                    all_lines=[l.text for l in sync.lines],
+                    cover_path=str(song.cover_path() or ""),
+                    song_id=cfg.id,
                     width=term_w, height=term_h, theme=theme, beat=beat,
                 )
                 try:
                     renderable = LayoutCls().render(ctx)
                 except Exception as e:  # noqa: BLE001
                     renderable = Text(f"[layout error] {e}", style="red")
-                live.update(renderable, refresh=True)
+                live.update(renderable)
 
                 frame = 1
                 now = time.perf_counter()
@@ -144,4 +169,5 @@ def render(
                 pygame.mixer.music.stop()
             except Exception:  # noqa: BLE001
                 pass
+        _osc_reset_bg()  # restore default terminal background on exit
     return backend

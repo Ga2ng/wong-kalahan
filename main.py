@@ -11,7 +11,12 @@ Usage:
 """
 from __future__ import annotations
 
+import os
 import sys
+
+# Hide the pygame banner ("pygame 2.x ... Hello from the pygame community")
+# by setting this BEFORE pygame is ever imported.
+os.environ.setdefault("PYGAME_HIDE_SUPPORT_PROMPT", "1")
 
 import typer
 from rich.console import Console
@@ -40,6 +45,7 @@ def run(
     nocountdown: bool = typer.Option(False, "--no-countdown", help="Skip 3-2-1-GO"),
     duration: float = typer.Option(None, "--duration", help="(unused) testing"),
     fps: int = typer.Option(None, "--fps", help="Override fps"),
+    start: str = typer.Option(None, "--start", help="Start at mm:ss or seconds (e.g. 1:30)"),
     debug: bool = typer.Option(False, "--debug", help="Verbose logging"),
 ):
     reg = _discover()
@@ -62,8 +68,10 @@ def run(
             console.print(f"[red]{e}[/red]")
             raise typer.Exit(1)
 
+    start_offset = _parse_start(start)
     console.print(f"[bold]▶ {song.config.title} — {song.config.artist}[/bold]  "
-                  f"[dim](layout={song.config.layout}, theme={song.config.theme})[/dim]")
+                  f"[dim](layout={song.config.layout}, theme={song.config.theme})"
+                  f"{f'  start={start}' if start else ''}[/dim]")
     backend = render(
         song,
         console,
@@ -71,8 +79,24 @@ def run(
         fps=fps,
         countdown=not nocountdown,
         duration=duration,
+        start_offset=start_offset,
     )
     console.print(f"[dim]cover backend: {backend}[/dim]")
+
+
+def _parse_start(value: str | None) -> float:
+    """Parse a --start value like '1:30', '90', or '90s' into seconds."""
+    if not value:
+        return 0.0
+    value = value.strip().lower().rstrip("s")
+    try:
+        if ":" in value:
+            parts = value.split(":")
+            return sum(float(p) * 60 ** i for i, p in enumerate(reversed(parts)))
+        return float(value)
+    except ValueError:
+        console.print(f"[yellow]warning: bad --start '{value}', ignoring[/yellow]")
+        return 0.0
 
 
 @app.command("list")

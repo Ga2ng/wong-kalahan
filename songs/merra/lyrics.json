@@ -1,1595 +1,1693 @@
 {
   "lyrics": [
     {
-      "start": 24.34,
-      "end": 29.3,
+      "start": 28.66,
+      "end": 29.98,
       "text": "Shedding tear it keeps on falling",
       "words": [
         {
-          "text": "Shanting,",
-          "start": 24.34,
-          "end": 25.52
+          "text": "Thank",
+          "start": 28.66,
+          "end": 29.26
         },
         {
-          "text": "it",
-          "start": 26.3,
-          "end": 26.68
+          "text": "you",
+          "start": 29.26,
+          "end": 29.56
         },
         {
-          "text": "keeps",
-          "start": 26.68,
-          "end": 27.16
+          "text": "very",
+          "start": 29.56,
+          "end": 29.86
         },
         {
-          "text": "on",
-          "start": 27.16,
-          "end": 27.66
-        },
-        {
-          "text": "falling",
-          "start": 27.66,
-          "end": 28.34
-        },
-        {
-          "text": "I",
-          "start": 28.34,
-          "end": 29.3
-        }
-      ]
-    },
-    {
-      "start": 29.3,
-      "end": 32.04,
-      "text": "I hope I could learn to love like you",
-      "words": [
-        {
-          "text": "jump,",
-          "start": 29.3,
-          "end": 29.84
-        },
-        {
-          "text": "I",
-          "start": 30.12,
-          "end": 30.12
-        },
-        {
-          "text": "kill",
-          "start": 30.12,
-          "end": 30.48
-        },
-        {
-          "text": "them",
-          "start": 30.48,
-          "end": 30.74
-        },
-        {
-          "text": "too",
-          "start": 30.74,
-          "end": 31.16
-        },
-        {
-          "text": "long",
-          "start": 31.16,
-          "end": 31.62
-        },
-        {
-          "text": "Love",
-          "start": 31.62,
-          "end": 32.04
-        },
-        {
-          "text": "you,",
-          "start": 32.04,
-          "end": 32.04
-        }
-      ]
-    },
-    {
-      "start": 32.04,
-      "end": 33.68,
-      "text": "Girl can we reverse it?",
-      "words": [
-        {
-          "text": "girl",
-          "start": 32.04,
-          "end": 32.34
-        },
-        {
-          "text": "can",
-          "start": 32.34,
-          "end": 32.68
-        },
-        {
-          "text": "be",
-          "start": 32.68,
-          "end": 33.08
-        },
-        {
-          "text": "me",
-          "start": 33.08,
-          "end": 33.38
+          "text": "much",
+          "start": 29.86,
+          "end": 29.98
         },
         {
           "text": "for",
-          "start": 33.38,
-          "end": 33.68
-        }
-      ]
-    },
-    {
-      "start": 33.68,
-      "end": 35.44,
-      "text": "The past is my pains",
-      "words": [
-        {
-          "text": "a",
-          "start": 33.68,
-          "end": 33.9
-        },
-        {
-          "text": "thing",
-          "start": 33.9,
-          "end": 34.48
-        },
-        {
-          "text": "The",
-          "start": 34.48,
-          "end": 35.12
-        },
-        {
-          "text": "past",
-          "start": 35.12,
-          "end": 35.18
-        },
-        {
-          "text": "is",
-          "start": 35.18,
-          "end": 35.44
-        }
-      ]
-    },
-    {
-      "start": 35.44,
-      "end": 38.18,
-      "text": "The past is my regrets",
-      "words": [
-        {
-          "text": "my",
-          "start": 35.44,
-          "end": 36.02
-        },
-        {
-          "text": "pains",
-          "start": 36.02,
-          "end": 36.68
-        },
-        {
-          "text": "The",
-          "start": 36.68,
-          "end": 37.48
-        },
-        {
-          "text": "past",
-          "start": 37.48,
-          "end": 37.78
-        },
-        {
-          "text": "is",
-          "start": 37.78,
-          "end": 38.18
-        }
-      ]
-    },
-    {
-      "start": 38.18,
-      "end": 40.52,
-      "text": "Starring at the ceiling",
-      "words": [
-        {
-          "text": "my",
-          "start": 38.18,
-          "end": 38.5
-        },
-        {
-          "text": "regrets",
-          "start": 38.5,
-          "end": 39.52
-        },
-        {
-          "text": "The",
-          "start": 39.52,
-          "end": 40.32
-        },
-        {
-          "text": "same",
-          "start": 40.32,
-          "end": 40.52
-        }
-      ]
-    },
-    {
-      "start": 40.52,
-      "end": 43.56,
-      "text": "Thinking about my mistakes till my eyes turns red",
-      "words": [
-        {
-          "text": "with",
-          "start": 40.52,
-          "end": 41.08
-        },
-        {
-          "text": "love,",
-          "start": 41.08,
-          "end": 41.34
-        },
-        {
-          "text": "the",
-          "start": 41.42,
-          "end": 41.46
-        },
-        {
-          "text": "same",
-          "start": 41.46,
-          "end": 41.78
-        },
-        {
-          "text": "wings",
-          "start": 41.78,
-          "end": 42.34
-        },
-        {
-          "text": "I",
-          "start": 42.34,
-          "end": 42.98
-        },
-        {
-          "text": "don't",
-          "start": 42.98,
-          "end": 43.1
-        },
-        {
-          "text": "mind",
-          "start": 43.1,
-          "end": 43.56
-        }
-      ]
-    },
-    {
-      "start": 43.56,
-      "end": 54.7,
-      "text": "This fantasy led me to see you when you were in class",
-      "words": [
-        {
-          "text": "what's",
-          "start": 43.56,
-          "end": 44.18
-        },
-        {
-          "text": "missing",
-          "start": 44.18,
-          "end": 44.8
-        },
-        {
-          "text": "My",
-          "start": 44.8,
-          "end": 45.46
-        },
-        {
-          "text": "eyes",
-          "start": 45.46,
-          "end": 46.06
-        },
-        {
-          "text": "are",
-          "start": 46.06,
-          "end": 46.58
-        },
-        {
-          "text": "strong",
-          "start": 46.58,
-          "end": 47.34
-        },
-        {
-          "text": "These",
-          "start": 50.42,
-          "end": 51.4
-        },
-        {
-          "text": "pasts",
-          "start": 51.4,
-          "end": 52.38
-        },
-        {
-          "text": "seem",
-          "start": 52.38,
-          "end": 53.42
-        },
-        {
-          "text": "to",
-          "start": 53.42,
-          "end": 54.06
-        },
-        {
-          "text": "help",
-          "start": 54.06,
-          "end": 54.7
-        }
-      ]
-    },
-    {
-      "start": 54.7,
-      "end": 61.06,
-      "text": "Then you gave me the most beautiful gift",
-      "words": [
-        {
-          "text": "me",
-          "start": 54.7,
-          "end": 55.56
-        },
-        {
-          "text": "Seeing",
-          "start": 55.56,
-          "end": 56.94
-        },
-        {
-          "text": "you",
-          "start": 56.94,
-          "end": 58.18
-        },
-        {
-          "text": "and",
-          "start": 58.18,
-          "end": 58.34
+          "start": 29.98,
+          "end": 29.98
         },
         {
           "text": "your",
-          "start": 58.34,
-          "end": 58.84
-        },
-        {
-          "text": "world",
-          "start": 58.84,
-          "end": 59.56
-        },
-        {
-          "text": "You",
-          "start": 60.56,
-          "end": 61.06
+          "start": 29.98,
+          "end": 29.98
         }
       ]
     },
     {
-      "start": 61.06,
-      "end": 66.78,
-      "text": "You drew my face and I realized that I've burned our precious memories",
+      "start": 29.98,
+      "end": 32.86,
+      "text": "I hope I could learn to love like you",
       "words": [
         {
-          "text": "can't",
-          "start": 61.06,
-          "end": 61.82
-        },
-        {
-          "text": "leave",
-          "start": 61.82,
-          "end": 62.1
-        },
-        {
-          "text": "the",
-          "start": 62.1,
-          "end": 62.5
-        },
-        {
-          "text": "most",
-          "start": 62.5,
-          "end": 62.72
-        },
-        {
-          "text": "beautiful",
-          "start": 62.72,
-          "end": 63.18
-        },
-        {
-          "text": "game",
-          "start": 63.18,
-          "end": 63.86
-        },
-        {
-          "text": "Travelling",
-          "start": 63.86,
-          "end": 64.78
-        },
-        {
-          "text": "my",
-          "start": 64.78,
-          "end": 65.46
-        },
-        {
-          "text": "pain",
-          "start": 65.46,
-          "end": 65.8
-        },
-        {
-          "text": "That",
-          "start": 65.8,
-          "end": 66.18
-        },
-        {
-          "text": "in",
-          "start": 66.18,
-          "end": 66.44
-        },
-        {
-          "text": "my",
-          "start": 66.44,
-          "end": 66.78
-        }
-      ]
-    },
-    {
-      "start": 66.78,
-      "end": 68.9,
-      "text": "That was big regret",
-      "words": [
-        {
-          "text": "real",
-          "start": 66.78,
-          "end": 67.4
-        },
-        {
-          "text": "life",
-          "start": 67.4,
-          "end": 67.9
-        },
-        {
-          "text": "The",
-          "start": 68.1,
-          "end": 68.9
-        },
-        {
-          "text": "diapers",
-          "start": 68.9,
-          "end": 68.9
-        }
-      ]
-    },
-    {
-      "start": 68.9,
-      "end": 71.22,
-      "text": "I'm better off dead",
-      "words": [
-        {
-          "text": "are",
-          "start": 68.9,
-          "end": 69.42
-        },
-        {
-          "text": "bridges",
-          "start": 69.42,
-          "end": 70.14
-        },
-        {
-          "text": "But",
-          "start": 70.14,
-          "end": 70.7
-        },
-        {
-          "text": "we",
-          "start": 70.7,
-          "end": 71.22
-        }
-      ]
-    },
-    {
-      "start": 71.22,
-      "end": 76.02,
-      "text": "I'm sorry for everything I did five years ago",
-      "words": [
-        {
-          "text": "all",
-          "start": 71.22,
-          "end": 71.62
-        },
-        {
-          "text": "must",
-          "start": 71.62,
-          "end": 72.06
-        },
-        {
-          "text": "be",
-          "start": 72.06,
-          "end": 72.6
-        },
-        {
-          "text": "a",
-          "start": 72.6,
-          "end": 72.76
-        },
-        {
-          "text": "great",
-          "start": 72.76,
-          "end": 73.16
-        },
-        {
-          "text": "red",
-          "start": 73.16,
-          "end": 73.66
-        },
-        {
-          "text": "That",
-          "start": 74.22,
-          "end": 75.18
-        },
-        {
-          "text": "out",
-          "start": 75.18,
-          "end": 76.02
-        }
-      ]
-    },
-    {
-      "start": 76.02,
-      "end": 79.2,
-      "text": "I wish I could take back the past",
-      "words": [
-        {
-          "text": "there",
-          "start": 76.02,
-          "end": 76.86
-        },
-        {
-          "text": "I'm",
-          "start": 76.86,
-          "end": 77.36
-        },
-        {
-          "text": "so",
-          "start": 77.36,
-          "end": 77.78
-        },
-        {
-          "text": "grateful",
-          "start": 77.78,
-          "end": 78.4
-        },
-        {
-          "text": "And",
-          "start": 78.4,
-          "end": 78.8
-        },
-        {
-          "text": "we're",
-          "start": 78.8,
-          "end": 79.14
-        },
-        {
-          "text": "free",
-          "start": 79.14,
-          "end": 79.2
-        }
-      ]
-    },
-    {
-      "start": 79.2,
-      "end": 80.92,
-      "text": "So we can stay again",
-      "words": [
-        {
-          "text": "of",
-          "start": 79.2,
-          "end": 79.52
-        },
-        {
-          "text": "that",
-          "start": 79.52,
-          "end": 79.64
-        },
-        {
-          "text": "and",
-          "start": 79.64,
-          "end": 80.02
-        },
-        {
-          "text": "far",
-          "start": 80.02,
-          "end": 80.46
+          "text": "attention",
+          "start": 29.98,
+          "end": 29.98
         },
         {
           "text": "You're",
-          "start": 80.46,
-          "end": 80.92
-        }
-      ]
-    },
-    {
-      "start": 80.92,
-      "end": 83.44,
-      "text": "You had me at hello",
-      "words": [
-        {
-          "text": "still",
-          "start": 80.92,
-          "end": 81.38
-        },
-        {
-          "text": "there",
-          "start": 81.38,
-          "end": 81.88
-        },
-        {
-          "text": "And",
-          "start": 81.88,
-          "end": 82.72
-        },
-        {
-          "text": "please,",
-          "start": 82.72,
-          "end": 83.14
-        },
-        {
-          "text": "I",
-          "start": 83.32,
-          "end": 83.44
-        }
-      ]
-    },
-    {
-      "start": 83.44,
-      "end": 85.12,
-      "text": "And now I'm so low",
-      "words": [
-        {
-          "text": "kill",
-          "start": 83.44,
-          "end": 83.78
-        },
-        {
-          "text": "you",
-          "start": 83.78,
-          "end": 83.96
-        },
-        {
-          "text": "Back",
-          "start": 83.96,
-          "end": 84.4
-        },
-        {
-          "text": "to",
-          "start": 84.4,
-          "end": 84.7
-        },
-        {
-          "text": "the",
-          "start": 84.7,
-          "end": 85.12
-        }
-      ]
-    },
-    {
-      "start": 85.12,
-      "end": 92.86,
-      "text": "Can you tell me is it hard for you to give me just last one chance?",
-      "words": [
-        {
-          "text": "castle",
-          "start": 85.12,
-          "end": 85.38
-        },
-        {
-          "text": "We",
-          "start": 85.38,
-          "end": 85.76
-        },
-        {
-          "text": "can't",
-          "start": 85.76,
-          "end": 86.24
-        },
-        {
-          "text": "see",
-          "start": 86.24,
-          "end": 86.62
-        },
-        {
-          "text": "you",
-          "start": 86.62,
-          "end": 87.16
-        },
-        {
-          "text": "You",
-          "start": 87.16,
-          "end": 87.58
-        },
-        {
-          "text": "can't",
-          "start": 87.58,
-          "end": 88.1
-        },
-        {
-          "text": "be",
-          "start": 88.1,
-          "end": 88.5
-        },
-        {
-          "text": "at",
-          "start": 88.5,
-          "end": 89.04
-        },
-        {
-          "text": "home",
-          "start": 89.04,
-          "end": 89.86
-        },
-        {
-          "text": "And",
-          "start": 89.86,
-          "end": 90.72
-        },
-        {
-          "text": "now",
-          "start": 90.72,
-          "end": 91.16
-        },
-        {
-          "text": "I'm",
-          "start": 91.16,
-          "end": 91.66
-        },
-        {
-          "text": "so",
-          "start": 91.66,
-          "end": 92.02
+          "start": 30.0,
+          "end": 30.26
         },
         {
           "text": "alone",
-          "start": 92.02,
-          "end": 92.86
-        }
-      ]
-    },
-    {
-      "start": 92.86,
-      "end": 96.04,
-      "text": "When every time you say we're done",
-      "words": [
-        {
-          "text": "Can't",
-          "start": 92.86,
-          "end": 93.5
+          "start": 30.26,
+          "end": 30.5
         },
         {
-          "text": "tell",
-          "start": 93.5,
-          "end": 93.76
+          "text": "too",
+          "start": 30.5,
+          "end": 30.92
         },
         {
-          "text": "me",
-          "start": 93.76,
-          "end": 94.38
+          "text": "long,",
+          "start": 30.92,
+          "end": 31.38
         },
         {
-          "text": "isn't",
-          "start": 94.38,
-          "end": 94.68
-        },
-        {
-          "text": "that",
-          "start": 94.68,
-          "end": 95.12
-        },
-        {
-          "text": "real",
-          "start": 95.12,
-          "end": 95.56
-        },
-        {
-          "text": "You",
-          "start": 95.56,
-          "end": 96.04
-        }
-      ]
-    },
-    {
-      "start": 96.04,
-      "end": 99.2,
-      "text": "I will be a lame blank canvas",
-      "words": [
-        {
-          "text": "can't",
-          "start": 96.04,
-          "end": 96.44
-        },
-        {
-          "text": "give",
-          "start": 96.44,
-          "end": 96.6
-        },
-        {
-          "text": "me",
-          "start": 96.6,
-          "end": 96.92
-        },
-        {
-          "text": "just",
-          "start": 96.92,
-          "end": 97.46
-        },
-        {
-          "text": "as",
-          "start": 97.46,
-          "end": 97.86
-        },
-        {
-          "text": "much",
-          "start": 97.86,
-          "end": 98.26
+          "text": "like",
+          "start": 31.56,
+          "end": 31.74
         },
         {
           "text": "a",
-          "start": 98.26,
-          "end": 99.2
-        }
-      ]
-    },
-    {
-      "start": 99.2,
-      "end": 111.1,
-      "text": "I'm all alone and day has gone",
-      "words": [
-        {
-          "text": "chance",
-          "start": 99.2,
-          "end": 100.88
+          "start": 31.74,
+          "end": 31.9
         },
         {
-          "text": "And",
-          "start": 107.84,
-          "end": 108.8
-        },
-        {
-          "text": "now",
-          "start": 108.8,
-          "end": 109.76
-        },
-        {
-          "text": "every",
-          "start": 109.76,
-          "end": 110.02
-        },
-        {
-          "text": "time",
-          "start": 110.02,
-          "end": 110.48
-        },
-        {
-          "text": "you",
-          "start": 110.48,
-          "end": 111.06
-        },
-        {
-          "text": "say",
-          "start": 111.06,
-          "end": 111.1
-        }
-      ]
-    },
-    {
-      "start": 111.1,
-      "end": 113.38,
-      "text": "Still waiting, when you get back home",
-      "words": [
-        {
-          "text": "we're",
-          "start": 111.1,
-          "end": 111.42
-        },
-        {
-          "text": "done",
-          "start": 111.42,
-          "end": 111.8
-        },
-        {
-          "text": "I",
-          "start": 111.8,
-          "end": 112.16
-        },
-        {
-          "text": "will",
-          "start": 112.16,
-          "end": 112.46
-        },
-        {
-          "text": "be",
-          "start": 112.46,
-          "end": 112.82
-        },
-        {
-          "text": "all",
-          "start": 112.82,
-          "end": 113.14
-        },
-        {
-          "text": "in",
-          "start": 113.14,
-          "end": 113.38
-        }
-      ]
-    },
-    {
-      "start": 113.38,
-      "end": 117.64,
-      "text": "I'm sorry for everything I did five years ago",
-      "words": [
-        {
-          "text": "pain",
-          "start": 113.38,
-          "end": 113.82
-        },
-        {
-          "text": "Because",
-          "start": 113.82,
-          "end": 114.64
-        },
-        {
-          "text": "I'm",
-          "start": 114.64,
-          "end": 115.24
-        },
-        {
-          "text": "alone",
-          "start": 115.24,
-          "end": 115.8
-        },
-        {
-          "text": "Can't",
-          "start": 115.8,
-          "end": 116.48
-        },
-        {
-          "text": "you",
-          "start": 116.48,
-          "end": 116.62
-        },
-        {
-          "text": "just",
-          "start": 116.62,
-          "end": 116.88
-        },
-        {
-          "text": "wait",
-          "start": 116.88,
-          "end": 117.64
-        }
-      ]
-    },
-    {
-      "start": 117.64,
-      "end": 126.72,
-      "text": "I wish I could take back the past",
-      "words": [
-        {
-          "text": "And",
-          "start": 117.64,
-          "end": 118.62
-        },
-        {
-          "text": "you're",
-          "start": 118.62,
-          "end": 119.2
-        },
-        {
-          "text": "getting",
-          "start": 119.2,
-          "end": 119.64
-        },
-        {
-          "text": "home",
-          "start": 119.64,
-          "end": 122.36
-        },
-        {
-          "text": "I'm",
-          "start": 122.36,
-          "end": 124.0
-        },
-        {
-          "text": "so",
-          "start": 124.0,
-          "end": 125.8
-        },
-        {
-          "text": "grateful",
-          "start": 125.8,
-          "end": 126.72
-        }
-      ]
-    },
-    {
-      "start": 126.72,
-      "end": 129.26,
-      "text": "So we can stay again",
-      "words": [
-        {
-          "text": "And",
-          "start": 126.72,
-          "end": 127.22
-        },
-        {
-          "text": "if",
-          "start": 127.22,
-          "end": 128.14
-        },
-        {
-          "text": "I",
-          "start": 128.14,
-          "end": 128.54
+          "text": "girl",
+          "start": 31.9,
+          "end": 32.2
         },
         {
           "text": "can",
-          "start": 128.54,
-          "end": 128.86
+          "start": 32.2,
+          "end": 32.48
         },
         {
-          "text": "see",
-          "start": 128.86,
-          "end": 129.26
+          "text": "be",
+          "start": 32.48,
+          "end": 32.86
         }
       ]
     },
     {
-      "start": 129.26,
-      "end": 135.94,
-      "text": "You had me at hello",
+      "start": 32.86,
+      "end": 35.36,
+      "text": "Girl can we reverse it?",
       "words": [
-        {
-          "text": "you",
-          "start": 129.26,
-          "end": 130.16
-        },
-        {
-          "text": "You're",
-          "start": 134.74,
-          "end": 135.94
-        },
-        {
-          "text": "still",
-          "start": 135.94,
-          "end": 135.94
-        },
-        {
-          "text": "there",
-          "start": 135.94,
-          "end": 135.94
-        },
-        {
-          "text": "And",
-          "start": 135.94,
-          "end": 135.94
-        }
-      ]
-    },
-    {
-      "start": 135.94,
-      "end": 141.76,
-      "text": "And now I'm so low",
-      "words": [
-        {
-          "text": "now",
-          "start": 135.94,
-          "end": 135.94
-        },
-        {
-          "text": "I'm",
-          "start": 135.94,
-          "end": 139.44
-        },
-        {
-          "text": "so",
-          "start": 139.44,
-          "end": 140.06
-        },
-        {
-          "text": "alone",
-          "start": 140.06,
-          "end": 140.92
-        },
-        {
-          "text": "Can't",
-          "start": 140.92,
-          "end": 141.76
-        }
-      ]
-    },
-    {
-      "start": 141.76,
-      "end": 145.62,
-      "text": "Can you tell me is it hard for you to give me just last one chance?",
-      "words": [
-        {
-          "text": "tell",
-          "start": 141.76,
-          "end": 141.76
-        },
         {
           "text": "me",
-          "start": 141.76,
-          "end": 142.46
+          "start": 32.86,
+          "end": 33.16
         },
         {
-          "text": "isn't",
-          "start": 142.46,
-          "end": 142.86
+          "text": "first",
+          "start": 33.16,
+          "end": 33.64
         },
         {
-          "text": "that",
-          "start": 142.86,
-          "end": 143.2
-        },
-        {
-          "text": "real",
-          "start": 143.2,
-          "end": 143.82
-        },
-        {
-          "text": "You",
-          "start": 143.82,
-          "end": 144.58
-        },
-        {
-          "text": "can't",
-          "start": 144.58,
-          "end": 144.6
-        },
-        {
-          "text": "be",
-          "start": 144.6,
-          "end": 144.9
-        },
-        {
-          "text": "at",
-          "start": 144.9,
-          "end": 145.38
-        },
-        {
-          "text": "home",
-          "start": 145.38,
-          "end": 145.38
-        },
-        {
-          "text": "You",
-          "start": 145.38,
-          "end": 145.38
-        },
-        {
-          "text": "can't",
-          "start": 145.38,
-          "end": 145.38
-        },
-        {
-          "text": "give",
-          "start": 145.38,
-          "end": 145.38
-        },
-        {
-          "text": "me",
-          "start": 145.38,
-          "end": 145.62
-        },
-        {
-          "text": "just",
-          "start": 145.62,
-          "end": 145.62
-        }
-      ]
-    },
-    {
-      "start": 145.62,
-      "end": 149.02,
-      "text": "I'm sorry for everything I did five years ago",
-      "words": [
-        {
-          "text": "as",
-          "start": 145.62,
-          "end": 145.94
-        },
-        {
-          "text": "much",
-          "start": 145.94,
-          "end": 146.28
-        },
-        {
-          "text": "a",
-          "start": 146.28,
-          "end": 146.86
-        },
-        {
-          "text": "chance",
-          "start": 146.86,
-          "end": 147.3
-        },
-        {
-          "text": "And",
-          "start": 147.3,
-          "end": 147.56
-        },
-        {
-          "text": "now",
-          "start": 147.56,
-          "end": 148.46
-        },
-        {
-          "text": "every",
-          "start": 148.46,
-          "end": 148.46
-        },
-        {
-          "text": "time",
-          "start": 148.46,
-          "end": 149.02
-        }
-      ]
-    },
-    {
-      "start": 149.02,
-      "end": 151.16,
-      "text": "I wish I could take back the past",
-      "words": [
-        {
-          "text": "you",
-          "start": 149.02,
-          "end": 149.24
-        },
-        {
-          "text": "say",
-          "start": 149.24,
-          "end": 149.24
-        },
-        {
-          "text": "we're",
-          "start": 149.24,
-          "end": 149.24
-        },
-        {
-          "text": "done",
-          "start": 149.24,
-          "end": 149.24
-        },
-        {
-          "text": "I'm",
-          "start": 149.24,
-          "end": 150.4
-        },
-        {
-          "text": "so",
-          "start": 150.4,
-          "end": 150.4
-        },
-        {
-          "text": "grateful",
-          "start": 150.4,
-          "end": 151.16
-        }
-      ]
-    },
-    {
-      "start": 156.04,
-      "end": 159.28,
-      "text": "So we can stay again",
-      "words": [
-        {
-          "text": "You",
-          "start": 156.04,
-          "end": 156.42
-        },
-        {
-          "text": "can't",
-          "start": 156.42,
-          "end": 157.06
-        },
-        {
-          "text": "be",
-          "start": 157.06,
-          "end": 157.06
-        },
-        {
-          "text": "at",
-          "start": 157.06,
-          "end": 158.2
-        },
-        {
-          "text": "home",
-          "start": 158.2,
-          "end": 159.28
-        }
-      ]
-    },
-    {
-      "start": 159.28,
-      "end": 162.22,
-      "text": "You had me at hello",
-      "words": [
-        {
-          "text": "And",
-          "start": 159.28,
-          "end": 160.22
-        },
-        {
-          "text": "now",
-          "start": 160.22,
-          "end": 160.58
-        },
-        {
-          "text": "I'm",
-          "start": 160.58,
-          "end": 161.04
-        },
-        {
-          "text": "so",
-          "start": 161.04,
-          "end": 161.44
-        },
-        {
-          "text": "alone",
-          "start": 161.44,
-          "end": 162.22
-        }
-      ]
-    },
-    {
-      "start": 162.22,
-      "end": 164.52,
-      "text": "And now I'm so low",
-      "words": [
-        {
-          "text": "Can't",
-          "start": 162.22,
-          "end": 163.16
-        },
-        {
-          "text": "tell",
-          "start": 163.16,
-          "end": 163.16
-        },
-        {
-          "text": "me",
-          "start": 163.16,
-          "end": 163.7
-        },
-        {
-          "text": "isn't",
-          "start": 163.7,
-          "end": 164.1
-        },
-        {
-          "text": "that",
-          "start": 164.1,
-          "end": 164.52
-        }
-      ]
-    },
-    {
-      "start": 164.52,
-      "end": 180.2,
-      "text": "Can you tell me is it hard for you to give me just last one chance?",
-      "words": [
-        {
-          "text": "real",
-          "start": 164.52,
-          "end": 164.9
-        },
-        {
-          "text": "You",
-          "start": 164.9,
-          "end": 165.4
-        },
-        {
-          "text": "can't",
-          "start": 165.4,
-          "end": 165.86
-        },
-        {
-          "text": "be",
-          "start": 165.86,
-          "end": 166.18
-        },
-        {
-          "text": "just",
-          "start": 166.18,
-          "end": 166.76
-        },
-        {
-          "text": "as",
-          "start": 166.76,
-          "end": 167.22
-        },
-        {
-          "text": "much",
-          "start": 167.22,
-          "end": 167.66
-        },
-        {
-          "text": "a",
-          "start": 167.66,
-          "end": 168.02
-        },
-        {
-          "text": "chance",
-          "start": 168.02,
-          "end": 170.28
-        },
-        {
-          "text": "Can't",
-          "start": 175.34,
-          "end": 176.34
-        },
-        {
-          "text": "be",
-          "start": 176.34,
-          "end": 176.9
-        },
-        {
-          "text": "just",
-          "start": 176.9,
-          "end": 177.46
-        },
-        {
-          "text": "as",
-          "start": 177.46,
-          "end": 177.94
-        },
-        {
-          "text": "much",
-          "start": 177.94,
-          "end": 178.5
-        },
-        {
-          "text": "a",
-          "start": 178.5,
-          "end": 180.2
-        }
-      ]
-    },
-    {
-      "start": 180.2,
-      "end": 199.34,
-      "text": "Give me just last one chance?",
-      "words": [
-        {
-          "text": "chance",
-          "start": 180.2,
-          "end": 182.6
-        },
-        {
-          "text": "I'm",
-          "start": 195.04,
-          "end": 196.1
-        },
-        {
-          "text": "so",
-          "start": 196.1,
-          "end": 196.44
-        },
-        {
-          "text": "grateful",
-          "start": 196.44,
-          "end": 197.24
-        },
-        {
-          "text": "Everything",
-          "start": 197.24,
-          "end": 198.42
-        },
-        {
-          "text": "I",
-          "start": 198.42,
-          "end": 199.34
-        }
-      ]
-    },
-    {
-      "start": 199.34,
-      "end": 204.34,
-      "text": "I'm sorry for everything I did five years ago",
-      "words": [
-        {
-          "text": "If",
-          "start": 199.34,
-          "end": 199.34
-        },
-        {
-          "text": "Five",
-          "start": 199.34,
-          "end": 199.88
-        },
-        {
-          "text": "Years",
-          "start": 199.88,
-          "end": 200.32
-        },
-        {
-          "text": "Will",
-          "start": 200.32,
-          "end": 201.56
-        },
-        {
-          "text": "We",
-          "start": 201.56,
-          "end": 202.94
-        },
-        {
-          "text": "shall",
-          "start": 202.94,
-          "end": 203.3
-        },
-        {
-          "text": "kill,",
-          "start": 203.3,
-          "end": 203.8
-        },
-        {
-          "text": "say",
-          "start": 204.02,
-          "end": 204.34
-        }
-      ]
-    },
-    {
-      "start": 204.34,
-      "end": 207.8,
-      "text": "I wish I could take back the past",
-      "words": [
-        {
-          "text": "Back",
-          "start": 204.34,
-          "end": 204.84
-        },
-        {
-          "text": "to",
-          "start": 204.84,
-          "end": 205.36
-        },
-        {
-          "text": "the",
-          "start": 205.36,
-          "end": 205.54
+          "text": "The",
+          "start": 33.64,
+          "end": 34.46
         },
         {
           "text": "past",
-          "start": 205.54,
-          "end": 206.04
+          "start": 34.46,
+          "end": 35.1
         },
         {
-          "text": "So",
-          "start": 206.04,
-          "end": 206.74
-        },
-        {
-          "text": "we",
-          "start": 206.74,
-          "end": 207.22
-        },
-        {
-          "text": "can't",
-          "start": 207.22,
-          "end": 207.8
+          "text": "is",
+          "start": 35.1,
+          "end": 35.36
         }
       ]
     },
     {
-      "start": 207.8,
-      "end": 218.662,
-      "text": "So we can stay again",
+      "start": 36.38,
+      "end": 39.14,
+      "text": "The past is my pains",
       "words": [
         {
+          "text": "the",
+          "start": 36.38,
+          "end": 37.1
+        },
+        {
+          "text": "past",
+          "start": 37.1,
+          "end": 37.64
+        },
+        {
+          "text": "is",
+          "start": 37.64,
+          "end": 37.96
+        },
+        {
+          "text": "my",
+          "start": 37.96,
+          "end": 38.28
+        },
+        {
+          "text": "regret",
+          "start": 38.28,
+          "end": 39.14
+        }
+      ]
+    },
+    {
+      "start": 39.14,
+      "end": 41.22,
+      "text": "The past is my regrets",
+      "words": [
+        {
+          "text": "I",
+          "start": 39.14,
+          "end": 40.04
+        },
+        {
+          "text": "say",
+          "start": 40.04,
+          "end": 40.18
+        },
+        {
+          "text": "we're",
+          "start": 40.18,
+          "end": 40.72
+        },
+        {
+          "text": "not",
+          "start": 40.72,
+          "end": 41.04
+        },
+        {
+          "text": "the",
+          "start": 41.04,
+          "end": 41.22
+        }
+      ]
+    },
+    {
+      "start": 41.22,
+      "end": 43.06,
+      "text": "Starring at the ceiling",
+      "words": [
+        {
+          "text": "same",
+          "start": 41.22,
+          "end": 41.54
+        },
+        {
+          "text": "things,",
+          "start": 41.54,
+          "end": 42.26
+        },
+        {
+          "text": "I",
+          "start": 42.3,
+          "end": 42.82
+        },
+        {
+          "text": "don't",
+          "start": 42.82,
+          "end": 43.06
+        }
+      ]
+    },
+    {
+      "start": 43.06,
+      "end": 51.4,
+      "text": "Thinking about my mistakes till my eyes turns red",
+      "words": [
+        {
+          "text": "mind",
+          "start": 43.06,
+          "end": 43.38
+        },
+        {
+          "text": "my",
+          "start": 43.38,
+          "end": 43.78
+        },
+        {
+          "text": "mistakes",
+          "start": 43.78,
+          "end": 44.42
+        },
+        {
+          "text": "It's",
+          "start": 44.42,
+          "end": 44.92
+        },
+        {
+          "text": "my",
+          "start": 44.92,
+          "end": 45.14
+        },
+        {
+          "text": "choice",
+          "start": 45.14,
+          "end": 45.98
+        },
+        {
+          "text": "to",
+          "start": 45.98,
+          "end": 46.3
+        },
+        {
+          "text": "try",
+          "start": 46.3,
+          "end": 47.08
+        },
+        {
+          "text": "These",
+          "start": 49.74,
+          "end": 50.62
+        },
+        {
+          "text": "fans",
+          "start": 50.62,
+          "end": 51.4
+        }
+      ]
+    },
+    {
+      "start": 51.4,
+      "end": 61.18,
+      "text": "This fantasy led me to see you when you were in class",
+      "words": [
+        {
+          "text": "seem",
+          "start": 51.4,
+          "end": 52.48
+        },
+        {
+          "text": "to",
+          "start": 52.48,
+          "end": 52.9
+        },
+        {
+          "text": "let",
+          "start": 52.9,
+          "end": 54.1
+        },
+        {
+          "text": "me",
+          "start": 54.1,
+          "end": 55.16
+        },
+        {
           "text": "see",
-          "start": 207.8,
-          "end": 208.4
+          "start": 55.16,
+          "end": 56.12
         },
         {
           "text": "you",
-          "start": 208.4,
-          "end": 209.64
+          "start": 56.12,
+          "end": 57.0
+        },
+        {
+          "text": "When",
+          "start": 57.0,
+          "end": 58.04
+        },
+        {
+          "text": "you",
+          "start": 58.04,
+          "end": 58.48
+        },
+        {
+          "text": "were",
+          "start": 58.48,
+          "end": 59.08
+        },
+        {
+          "text": "young,",
+          "start": 59.08,
+          "end": 59.84
+        },
+        {
+          "text": "come",
+          "start": 60.1,
+          "end": 60.34
+        },
+        {
+          "text": "When",
+          "start": 60.34,
+          "end": 61.0
+        },
+        {
+          "text": "you",
+          "start": 61.0,
+          "end": 61.18
         }
       ]
+    },
+    {
+      "start": 61.18,
+      "end": 64.04,
+      "text": "Then you gave me the most beautiful gift",
+      "words": [
+        {
+          "text": "gave",
+          "start": 61.18,
+          "end": 61.5
+        },
+        {
+          "text": "me",
+          "start": 61.5,
+          "end": 61.92
+        },
+        {
+          "text": "the",
+          "start": 61.92,
+          "end": 62.2
+        },
+        {
+          "text": "most",
+          "start": 62.2,
+          "end": 62.62
+        },
+        {
+          "text": "breath",
+          "start": 62.62,
+          "end": 62.8
+        },
+        {
+          "text": "it",
+          "start": 62.8,
+          "end": 63.04
+        },
+        {
+          "text": "would",
+          "start": 63.04,
+          "end": 63.24
+        },
+        {
+          "text": "give",
+          "start": 63.24,
+          "end": 63.58
+        },
+        {
+          "text": "you",
+          "start": 63.58,
+          "end": 64.04
+        }
+      ]
+    },
+    {
+      "start": 64.04,
+      "end": 71.84,
+      "text": "You drew my face and I realized that I've burned our precious memories",
+      "words": [
+        {
+          "text": "Drown",
+          "start": 64.04,
+          "end": 64.4
+        },
+        {
+          "text": "my",
+          "start": 64.4,
+          "end": 65.06
+        },
+        {
+          "text": "face",
+          "start": 65.06,
+          "end": 65.64
+        },
+        {
+          "text": "and",
+          "start": 65.64,
+          "end": 66.08
+        },
+        {
+          "text": "I",
+          "start": 66.08,
+          "end": 66.46
+        },
+        {
+          "text": "realized",
+          "start": 66.46,
+          "end": 67.48
+        },
+        {
+          "text": "the",
+          "start": 67.48,
+          "end": 68.12
+        },
+        {
+          "text": "drivers",
+          "start": 68.12,
+          "end": 68.56
+        },
+        {
+          "text": "are",
+          "start": 68.56,
+          "end": 69.18
+        },
+        {
+          "text": "breathing",
+          "start": 69.18,
+          "end": 69.6
+        },
+        {
+          "text": "But",
+          "start": 69.6,
+          "end": 70.5
+        },
+        {
+          "text": "we",
+          "start": 70.5,
+          "end": 70.96
+        },
+        {
+          "text": "had",
+          "start": 70.96,
+          "end": 71.36
+        },
+        {
+          "text": "lost",
+          "start": 71.36,
+          "end": 71.84
+        }
+      ]
+    },
+    {
+      "start": 71.84,
+      "end": 75.3,
+      "text": "That was big regret",
+      "words": [
+        {
+          "text": "big",
+          "start": 71.84,
+          "end": 72.48
+        },
+        {
+          "text": "regret",
+          "start": 72.48,
+          "end": 73.56
+        },
+        {
+          "text": "That",
+          "start": 73.56,
+          "end": 74.9
+        },
+        {
+          "text": "I",
+          "start": 74.9,
+          "end": 75.3
+        }
+      ]
+    },
+    {
+      "start": 75.3,
+      "end": 77.54,
+      "text": "I'm better off dead",
+      "words": [
+        {
+          "text": "wrote",
+          "start": 75.3,
+          "end": 75.84
+        },
+        {
+          "text": "it",
+          "start": 75.84,
+          "end": 76.74
+        },
+        {
+          "text": "I'm",
+          "start": 76.74,
+          "end": 77.2
+        },
+        {
+          "text": "sorry",
+          "start": 77.2,
+          "end": 77.54
+        }
+      ]
+    },
+    {
+      "start": 77.54,
+      "end": 83.22,
+      "text": "I'm sorry for everything I did five years ago",
+      "words": [
+        {
+          "text": "for",
+          "start": 77.54,
+          "end": 78.14
+        },
+        {
+          "text": "everything",
+          "start": 78.14,
+          "end": 78.9
+        },
+        {
+          "text": "I",
+          "start": 78.9,
+          "end": 79.58
+        },
+        {
+          "text": "did",
+          "start": 79.58,
+          "end": 79.72
+        },
+        {
+          "text": "for",
+          "start": 79.72,
+          "end": 80.14
+        },
+        {
+          "text": "years",
+          "start": 80.14,
+          "end": 80.84
+        },
+        {
+          "text": "ago",
+          "start": 80.84,
+          "end": 82.0
+        },
+        {
+          "text": "And",
+          "start": 82.0,
+          "end": 82.52
+        },
+        {
+          "text": "please",
+          "start": 82.52,
+          "end": 82.94
+        },
+        {
+          "text": "I",
+          "start": 82.94,
+          "end": 83.22
+        }
+      ]
+    },
+    {
+      "start": 83.22,
+      "end": 86.34,
+      "text": "I wish I could take back the past",
+      "words": [
+        {
+          "text": "can't",
+          "start": 83.22,
+          "end": 83.76
+        },
+        {
+          "text": "take",
+          "start": 83.76,
+          "end": 83.88
+        },
+        {
+          "text": "back",
+          "start": 83.88,
+          "end": 84.36
+        },
+        {
+          "text": "the",
+          "start": 84.36,
+          "end": 84.52
+        },
+        {
+          "text": "past",
+          "start": 84.52,
+          "end": 84.86
+        },
+        {
+          "text": "so",
+          "start": 84.86,
+          "end": 85.32
+        },
+        {
+          "text": "we",
+          "start": 85.32,
+          "end": 85.56
+        },
+        {
+          "text": "can",
+          "start": 85.56,
+          "end": 85.84
+        },
+        {
+          "text": "see",
+          "start": 85.84,
+          "end": 86.34
+        }
+      ]
+    },
+    {
+      "start": 91.42,
+      "end": 93.54,
+      "text": "So we can stay again",
+      "words": [
+        {
+          "text": "so",
+          "start": 91.42,
+          "end": 91.74
+        },
+        {
+          "text": "low",
+          "start": 91.74,
+          "end": 92.18
+        },
+        {
+          "text": "Can",
+          "start": 92.58,
+          "end": 93.02
+        },
+        {
+          "text": "you",
+          "start": 93.02,
+          "end": 93.34
+        },
+        {
+          "text": "tell",
+          "start": 93.34,
+          "end": 93.54
+        }
+      ]
+    },
+    {
+      "start": 95.84,
+      "end": 97.54,
+      "text": "You had me at hello",
+      "words": [
+        {
+          "text": "you",
+          "start": 95.84,
+          "end": 96.34
+        },
+        {
+          "text": "give",
+          "start": 96.34,
+          "end": 96.38
+        },
+        {
+          "text": "me",
+          "start": 96.38,
+          "end": 96.6
+        },
+        {
+          "text": "just",
+          "start": 96.6,
+          "end": 97.1
+        },
+        {
+          "text": "a",
+          "start": 97.1,
+          "end": 97.54
+        }
+      ]
+    },
+    {
+      "start": 97.54,
+      "end": 110.18,
+      "text": "And now I'm so low",
+      "words": [
+        {
+          "text": "small",
+          "start": 97.54,
+          "end": 98.02
+        },
+        {
+          "text": "chance?",
+          "start": 98.02,
+          "end": 99.76
+        },
+        {
+          "text": "When",
+          "start": 108.44,
+          "end": 109.24
+        },
+        {
+          "text": "every",
+          "start": 109.24,
+          "end": 109.82
+        },
+        {
+          "text": "time",
+          "start": 109.82,
+          "end": 110.18
+        }
+      ]
+    },
+    {
+      "start": 110.18,
+      "end": 117.26,
+      "text": "Can you tell me is it hard for you to give me just last one chance?",
+      "words": [
+        {
+          "text": "you",
+          "start": 110.18,
+          "end": 110.62
+        },
+        {
+          "text": "say",
+          "start": 110.62,
+          "end": 110.8
+        },
+        {
+          "text": "we're",
+          "start": 110.8,
+          "end": 111.3
+        },
+        {
+          "text": "done",
+          "start": 111.3,
+          "end": 111.66
+        },
+        {
+          "text": "We'll",
+          "start": 111.66,
+          "end": 112.32
+        },
+        {
+          "text": "be",
+          "start": 112.32,
+          "end": 112.58
+        },
+        {
+          "text": "all",
+          "start": 112.58,
+          "end": 112.8
+        },
+        {
+          "text": "ain't",
+          "start": 112.8,
+          "end": 113.32
+        },
+        {
+          "text": "playing",
+          "start": 113.32,
+          "end": 113.58
+        },
+        {
+          "text": "again",
+          "start": 113.58,
+          "end": 114.14
+        },
+        {
+          "text": "for",
+          "start": 114.14,
+          "end": 114.42
+        },
+        {
+          "text": "so",
+          "start": 114.42,
+          "end": 114.8
+        },
+        {
+          "text": "long",
+          "start": 114.8,
+          "end": 115.34
+        },
+        {
+          "text": "Okay,",
+          "start": 115.34,
+          "end": 116.18
+        },
+        {
+          "text": "yes,",
+          "start": 116.4,
+          "end": 116.6
+        },
+        {
+          "text": "come,",
+          "start": 116.7,
+          "end": 116.86
+        },
+        {
+          "text": "so",
+          "start": 117.26,
+          "end": 117.26
+        }
+      ]
+    },
+    {
+      "start": 117.26,
+      "end": 119.8,
+      "text": "When every time you say we're done",
+      "words": [
+        {
+          "text": "wait",
+          "start": 117.26,
+          "end": 117.5
+        },
+        {
+          "text": "a",
+          "start": 117.5,
+          "end": 117.96
+        },
+        {
+          "text": "minute",
+          "start": 117.96,
+          "end": 118.26
+        },
+        {
+          "text": "And",
+          "start": 118.26,
+          "end": 118.56
+        },
+        {
+          "text": "you",
+          "start": 118.56,
+          "end": 118.82
+        },
+        {
+          "text": "get",
+          "start": 118.82,
+          "end": 119.2
+        },
+        {
+          "text": "back",
+          "start": 119.2,
+          "end": 119.8
+        }
+      ]
+    },
+    {
+      "start": 119.8,
+      "end": 127.8,
+      "text": "I will be a lame blank canvas",
+      "words": [
+        {
+          "text": "home",
+          "start": 119.8,
+          "end": 121.98
+        },
+        {
+          "text": "I'm",
+          "start": 124.04,
+          "end": 124.84
+        },
+        {
+          "text": "sorry",
+          "start": 124.84,
+          "end": 125.64
+        },
+        {
+          "text": "for",
+          "start": 125.64,
+          "end": 126.2
+        },
+        {
+          "text": "everything",
+          "start": 126.2,
+          "end": 127.2
+        },
+        {
+          "text": "I",
+          "start": 127.2,
+          "end": 127.7
+        },
+        {
+          "text": "did",
+          "start": 127.7,
+          "end": 127.8
+        }
+      ]
+    },
+    {
+      "start": 127.8,
+      "end": 131.78,
+      "text": "I'm all alone and day has gone",
+      "words": [
+        {
+          "text": "for",
+          "start": 127.8,
+          "end": 128.16
+        },
+        {
+          "text": "years",
+          "start": 128.16,
+          "end": 128.88
+        },
+        {
+          "text": "ago",
+          "start": 128.88,
+          "end": 129.34
+        },
+        {
+          "text": "And",
+          "start": 129.34,
+          "end": 130.92
+        },
+        {
+          "text": "please",
+          "start": 130.92,
+          "end": 130.92
+        },
+        {
+          "text": "I",
+          "start": 130.92,
+          "end": 131.24
+        },
+        {
+          "text": "can't",
+          "start": 131.24,
+          "end": 131.78
+        }
+      ]
+    },
+    {
+      "start": 131.78,
+      "end": 133.86,
+      "text": "Still waiting, when you get back home",
+      "words": [
+        {
+          "text": "take",
+          "start": 131.78,
+          "end": 131.92
+        },
+        {
+          "text": "back",
+          "start": 131.92,
+          "end": 132.32
+        },
+        {
+          "text": "the",
+          "start": 132.32,
+          "end": 132.54
+        },
+        {
+          "text": "past",
+          "start": 132.54,
+          "end": 132.88
+        },
+        {
+          "text": "so",
+          "start": 132.88,
+          "end": 133.3
+        },
+        {
+          "text": "we",
+          "start": 133.3,
+          "end": 133.56
+        },
+        {
+          "text": "can",
+          "start": 133.56,
+          "end": 133.86
+        }
+      ]
+    },
+    {
+      "start": 133.86,
+      "end": 139.42,
+      "text": "I'm sorry for everything I did five years ago",
+      "words": [
+        {
+          "text": "see",
+          "start": 133.86,
+          "end": 134.38
+        },
+        {
+          "text": "Can",
+          "start": 134.38,
+          "end": 134.86
+        },
+        {
+          "text": "you",
+          "start": 134.86,
+          "end": 135.36
+        },
+        {
+          "text": "help",
+          "start": 135.36,
+          "end": 135.8
+        },
+        {
+          "text": "me",
+          "start": 135.8,
+          "end": 136.3
+        },
+        {
+          "text": "at",
+          "start": 136.3,
+          "end": 136.88
+        },
+        {
+          "text": "all?",
+          "start": 136.88,
+          "end": 137.26
+        },
+        {
+          "text": "And",
+          "start": 137.58,
+          "end": 138.36
+        },
+        {
+          "text": "now",
+          "start": 138.36,
+          "end": 139.02
+        },
+        {
+          "text": "I'm",
+          "start": 139.02,
+          "end": 139.42
+        }
+      ]
+    },
+    {
+      "start": 139.42,
+      "end": 143.26,
+      "text": "I wish I could take back the past",
+      "words": [
+        {
+          "text": "so",
+          "start": 139.42,
+          "end": 139.72
+        },
+        {
+          "text": "low",
+          "start": 139.72,
+          "end": 140.58
+        },
+        {
+          "text": "Can",
+          "start": 140.58,
+          "end": 141.06
+        },
+        {
+          "text": "you",
+          "start": 141.06,
+          "end": 141.4
+        },
+        {
+          "text": "tell",
+          "start": 141.4,
+          "end": 141.56
+        },
+        {
+          "text": "me",
+          "start": 141.56,
+          "end": 142.02
+        },
+        {
+          "text": "isn't",
+          "start": 142.02,
+          "end": 142.66
+        },
+        {
+          "text": "there",
+          "start": 142.66,
+          "end": 142.92
+        },
+        {
+          "text": "for",
+          "start": 142.92,
+          "end": 143.26
+        }
+      ]
+    },
+    {
+      "start": 143.26,
+      "end": 145.52,
+      "text": "So we can stay again",
+      "words": [
+        {
+          "text": "you?",
+          "start": 143.26,
+          "end": 143.7
+        },
+        {
+          "text": "Can't",
+          "start": 143.88,
+          "end": 144.5
+        },
+        {
+          "text": "we",
+          "start": 144.5,
+          "end": 144.62
+        },
+        {
+          "text": "just",
+          "start": 144.62,
+          "end": 145.04
+        },
+        {
+          "text": "a",
+          "start": 145.04,
+          "end": 145.52
+        }
+      ]
+    },
+    {
+      "start": 145.52,
+      "end": 148.48,
+      "text": "You had me at hello",
+      "words": [
+        {
+          "text": "small",
+          "start": 145.52,
+          "end": 145.94
+        },
+        {
+          "text": "chance?",
+          "start": 145.94,
+          "end": 146.34
+        },
+        {
+          "text": "When",
+          "start": 146.68,
+          "end": 146.98
+        },
+        {
+          "text": "every",
+          "start": 146.98,
+          "end": 147.84
+        },
+        {
+          "text": "time",
+          "start": 147.84,
+          "end": 148.48
+        }
+      ]
+    },
+    {
+      "start": 148.48,
+      "end": 149.36,
+      "text": "And now I'm so low",
+      "words": [
+        {
+          "text": "you",
+          "start": 148.48,
+          "end": 148.86
+        },
+        {
+          "text": "say",
+          "start": 148.86,
+          "end": 148.86
+        },
+        {
+          "text": "we're",
+          "start": 148.86,
+          "end": 148.98
+        },
+        {
+          "text": "done",
+          "start": 148.98,
+          "end": 148.98
+        },
+        {
+          "text": "We'll",
+          "start": 148.98,
+          "end": 149.36
+        }
+      ]
+    },
+    {
+      "start": 149.36,
+      "end": 154.54,
+      "text": "Can you tell me is it hard for you to give me just last one chance?",
+      "words": [
+        {
+          "text": "be",
+          "start": 149.36,
+          "end": 149.36
+        },
+        {
+          "text": "all",
+          "start": 149.36,
+          "end": 149.36
+        },
+        {
+          "text": "ain't",
+          "start": 149.36,
+          "end": 149.36
+        },
+        {
+          "text": "playing",
+          "start": 149.36,
+          "end": 149.56
+        },
+        {
+          "text": "again",
+          "start": 149.56,
+          "end": 149.56
+        },
+        {
+          "text": "for",
+          "start": 149.56,
+          "end": 149.56
+        },
+        {
+          "text": "so",
+          "start": 149.56,
+          "end": 150.3
+        },
+        {
+          "text": "long",
+          "start": 150.3,
+          "end": 151.46
+        },
+        {
+          "text": "And",
+          "start": 151.46,
+          "end": 151.84
+        },
+        {
+          "text": "please",
+          "start": 151.84,
+          "end": 152.18
+        },
+        {
+          "text": "I",
+          "start": 152.18,
+          "end": 152.54
+        },
+        {
+          "text": "can't",
+          "start": 152.54,
+          "end": 153.12
+        },
+        {
+          "text": "take",
+          "start": 153.12,
+          "end": 153.2
+        },
+        {
+          "text": "back",
+          "start": 153.2,
+          "end": 153.58
+        },
+        {
+          "text": "the",
+          "start": 153.58,
+          "end": 153.86
+        },
+        {
+          "text": "past",
+          "start": 153.86,
+          "end": 154.18
+        },
+        {
+          "text": "so",
+          "start": 154.18,
+          "end": 154.54
+        }
+      ]
+    },
+    {
+      "start": 154.54,
+      "end": 159.72,
+      "text": "I'm sorry for everything I did five years ago",
+      "words": [
+        {
+          "text": "we",
+          "start": 154.54,
+          "end": 154.9
+        },
+        {
+          "text": "can",
+          "start": 154.9,
+          "end": 155.2
+        },
+        {
+          "text": "see",
+          "start": 155.2,
+          "end": 155.7
+        },
+        {
+          "text": "Can",
+          "start": 155.7,
+          "end": 156.16
+        },
+        {
+          "text": "you",
+          "start": 156.16,
+          "end": 156.64
+        },
+        {
+          "text": "help",
+          "start": 156.64,
+          "end": 157.1
+        },
+        {
+          "text": "me",
+          "start": 157.1,
+          "end": 157.56
+        },
+        {
+          "text": "at",
+          "start": 157.56,
+          "end": 158.18
+        },
+        {
+          "text": "all?",
+          "start": 158.18,
+          "end": 158.54
+        },
+        {
+          "text": "And",
+          "start": 158.54,
+          "end": 159.72
+        }
+      ]
+    },
+    {
+      "start": 159.72,
+      "end": 163.98,
+      "text": "I wish I could take back the past",
+      "words": [
+        {
+          "text": "now",
+          "start": 159.72,
+          "end": 160.34
+        },
+        {
+          "text": "I'm",
+          "start": 160.34,
+          "end": 160.78
+        },
+        {
+          "text": "so",
+          "start": 160.78,
+          "end": 161.1
+        },
+        {
+          "text": "low",
+          "start": 161.1,
+          "end": 161.9
+        },
+        {
+          "text": "Can",
+          "start": 161.9,
+          "end": 162.34
+        },
+        {
+          "text": "you",
+          "start": 162.34,
+          "end": 162.66
+        },
+        {
+          "text": "tell",
+          "start": 162.66,
+          "end": 162.88
+        },
+        {
+          "text": "me",
+          "start": 162.88,
+          "end": 163.36
+        },
+        {
+          "text": "isn't",
+          "start": 163.36,
+          "end": 163.98
+        }
+      ]
+    },
+    {
+      "start": 163.98,
+      "end": 165.92,
+      "text": "So we can stay again",
+      "words": [
+        {
+          "text": "there",
+          "start": 163.98,
+          "end": 164.16
+        },
+        {
+          "text": "for",
+          "start": 164.16,
+          "end": 164.46
+        },
+        {
+          "text": "you?",
+          "start": 164.46,
+          "end": 164.88
+        },
+        {
+          "text": "Can't",
+          "start": 165.14,
+          "end": 165.78
+        },
+        {
+          "text": "we",
+          "start": 165.78,
+          "end": 165.92
+        }
+      ]
+    },
+    {
+      "start": 165.92,
+      "end": 176.36,
+      "text": "You had me at hello",
+      "words": [
+        {
+          "text": "just",
+          "start": 165.92,
+          "end": 166.6
+        },
+        {
+          "text": "a",
+          "start": 166.6,
+          "end": 166.86
+        },
+        {
+          "text": "small",
+          "start": 166.86,
+          "end": 167.36
+        },
+        {
+          "text": "chance?",
+          "start": 167.36,
+          "end": 169.0
+        },
+        {
+          "text": "Can't",
+          "start": 175.44,
+          "end": 176.36
+        }
+      ]
+    },
+    {
+      "start": 176.36,
+      "end": 179.52,
+      "text": "And now I'm so low",
+      "words": [
+        {
+          "text": "we",
+          "start": 176.36,
+          "end": 176.58
+        },
+        {
+          "text": "just",
+          "start": 176.58,
+          "end": 177.14
+        },
+        {
+          "text": "a",
+          "start": 177.14,
+          "end": 177.54
+        },
+        {
+          "text": "small",
+          "start": 177.54,
+          "end": 177.9
+        },
+        {
+          "text": "chance?",
+          "start": 177.9,
+          "end": 179.52
+        }
+      ]
+    },
+    {
+      "start": 194.64,
+      "end": 204.98,
+      "text": "Can you tell me is it hard for you to give me just last one chance?",
+      "words": [
+        {
+          "text": "I'm",
+          "start": 194.64,
+          "end": 195.8
+        },
+        {
+          "text": "sorry",
+          "start": 195.8,
+          "end": 196.3
+        },
+        {
+          "text": "for",
+          "start": 196.3,
+          "end": 196.94
+        },
+        {
+          "text": "everything",
+          "start": 196.94,
+          "end": 198.3
+        },
+        {
+          "text": "I",
+          "start": 198.3,
+          "end": 198.98
+        },
+        {
+          "text": "did",
+          "start": 198.98,
+          "end": 199.04
+        },
+        {
+          "text": "for",
+          "start": 199.04,
+          "end": 199.46
+        },
+        {
+          "text": "years",
+          "start": 199.46,
+          "end": 200.08
+        },
+        {
+          "text": "ago",
+          "start": 200.08,
+          "end": 201.08
+        },
+        {
+          "text": "And",
+          "start": 201.08,
+          "end": 202.52
+        },
+        {
+          "text": "we'll",
+          "start": 202.52,
+          "end": 202.86
+        },
+        {
+          "text": "so",
+          "start": 202.86,
+          "end": 203.2
+        },
+        {
+          "text": "I",
+          "start": 203.2,
+          "end": 203.38
+        },
+        {
+          "text": "can't",
+          "start": 203.38,
+          "end": 203.96
+        },
+        {
+          "text": "take",
+          "start": 203.96,
+          "end": 204.16
+        },
+        {
+          "text": "back",
+          "start": 204.16,
+          "end": 204.74
+        },
+        {
+          "text": "the",
+          "start": 204.74,
+          "end": 204.98
+        }
+      ]
+    },
+    {
+      "start": 204.98,
+      "end": 209.68,
+      "text": "Give me just last one chance?",
+      "words": [
+        {
+          "text": "past",
+          "start": 204.98,
+          "end": 205.56
+        },
+        {
+          "text": "so",
+          "start": 205.56,
+          "end": 206.34
+        },
+        {
+          "text": "we",
+          "start": 206.34,
+          "end": 206.92
+        },
+        {
+          "text": "can",
+          "start": 206.92,
+          "end": 207.38
+        },
+        {
+          "text": "see",
+          "start": 207.38,
+          "end": 208.14
+        },
+        {
+          "text": "again",
+          "start": 208.14,
+          "end": 209.68
+        }
+      ]
+    },
+    {
+      "start": 218.54,
+      "end": 218.64,
+      "text": "I'm sorry for everything I did five years ago",
+      "words": [
+        {
+          "text": "I'm",
+          "start": 218.54,
+          "end": 218.56
+        },
+        {
+          "text": "sorry",
+          "start": 218.56,
+          "end": 218.56
+        },
+        {
+          "text": "for",
+          "start": 218.56,
+          "end": 218.64
+        },
+        {
+          "text": "everything",
+          "start": 218.64,
+          "end": 218.64
+        },
+        {
+          "text": "I",
+          "start": 218.64,
+          "end": 218.64
+        },
+        {
+          "text": "did",
+          "start": 218.64,
+          "end": 218.64
+        },
+        {
+          "text": "for",
+          "start": 218.64,
+          "end": 218.64
+        },
+        {
+          "text": "years",
+          "start": 218.64,
+          "end": 218.64
+        },
+        {
+          "text": "ago",
+          "start": 218.64,
+          "end": 218.64
+        }
+      ]
+    },
+    {
+      "start": 218.64,
+      "end": 218.662,
+      "text": "I wish I could take back the past",
+      "words": null
+    },
+    {
+      "start": 218.662,
+      "end": 218.662,
+      "text": "So we can stay again",
+      "words": null
     }
   ]
 }

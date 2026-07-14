@@ -25,10 +25,13 @@ class FrameContext:
     progress: float  # 0..1
     ascii_art: list[str]  # colored lines of the cover
     full_ascii: list[str]  # larger/uncropped cover variant
+    all_lines: list[str]  # every lyric line (for stacked/poster views)
     width: int
     height: int
     theme: "object"  # BaseTheme
     beat: float = 0.0  # 0..1 audio-reactive pulse
+    cover_path: str = ""   # path to the source cover image (for re-render)
+    song_id: str = ""     # song id (to load config for asset paths)
 
 
 class BaseLayout:
@@ -38,8 +41,11 @@ class BaseLayout:
         raise NotImplementedError
 
 
-@dataclass
 class BaseTheme:
+    """Theme = plain class (NOT dataclass) so subclasses can override palette
+    fields by simple class-attribute assignment. (A dataclass would ignore
+    subclass field re-assignment and keep the base default.)"""
+
     name: str = "base"
     # Colorcode palette (DESIGN.md #3) as rich truecolor styles
     portal_red: str = "#E63946"
@@ -55,6 +61,8 @@ class BaseTheme:
     dim_style: str = "dim #6B7A99"
     border_style: str = "bold #2A9D8F"
     ascii_columns: int = 64
+    # terminal background tint (set via OSC 11 when this theme is active)
+    bg: str = "#0B0E14"
 
     def color(self, name: str) -> str:
         return getattr(self, name, self.accent_style)

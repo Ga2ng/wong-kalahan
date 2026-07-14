@@ -50,16 +50,22 @@ class ClockSource:
 
 
 class AudioClock(ClockSource):
-    """Clock driven by pygame mixer playback position (seconds)."""
+    """Clock driven by a wall clock started at the exact moment playback
+    begins, NOT pygame's get_pos() (which drifts/lags). This keeps lyrics
+    locked to the audio without accumulating error."""
 
     def __init__(self, offset: float = 0.0):
         super().__init__(offset=offset)
         import pygame
 
         self._pg = pygame
+        self._audio_start = 0.0
+
+    def start(self) -> None:
+        # called right after pygame.mixer.music.play()
+        super().start()
+        self._audio_start = time.perf_counter()
 
     def raw_time(self) -> float:
-        pos_ms = self._pg.mixer.music.get_pos()
-        if pos_ms < 0:
-            return 0.0
-        return pos_ms / 1000.0
+        # wall-clock since playback started == real audio position
+        return time.perf_counter() - self._audio_start
