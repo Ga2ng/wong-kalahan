@@ -46,6 +46,7 @@ def run(
     duration: float = typer.Option(None, "--duration", help="(unused) testing"),
     fps: int = typer.Option(None, "--fps", help="Override fps"),
     start: str = typer.Option(None, "--start", help="Start at mm:ss or seconds (e.g. 1:30)"),
+    offset: float = typer.Option(0.0, "--offset", help="Sync offset in SECONDS (+=lyric later, -=tighter). Tune per machine."),
     debug: bool = typer.Option(False, "--debug", help="Verbose logging"),
 ):
     reg = _discover()
@@ -80,6 +81,7 @@ def run(
         countdown=not nocountdown,
         duration=duration,
         start_offset=start_offset,
+        sync_offset=offset,
     )
     console.print(f"[dim]cover backend: {backend}[/dim]")
 

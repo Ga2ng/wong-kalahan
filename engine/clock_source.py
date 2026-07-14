@@ -50,9 +50,14 @@ class ClockSource:
 
 
 class AudioClock(ClockSource):
-    """Clock driven by a wall clock started at the exact moment playback
-    begins, NOT pygame's get_pos() (which drifts/lags). This keeps lyrics
-    locked to the audio without accumulating error."""
+    """Smooth master clock: counts wall-time from the instant playback
+    starts (perf_counter is high-resolution and monotonic, so the UI never
+    jumps). The actual audio position and this clock agree to within
+    pygame's startup latency, which you compensate with `offset`
+    (--offset, in seconds; negative = tighter). This is smoother than
+    pygame's get_pos(), which only updates per audio-buffer chunk and
+    therefore stutters the on-screen timer.
+    """
 
     def __init__(self, offset: float = 0.0):
         super().__init__(offset=offset)
@@ -67,5 +72,5 @@ class AudioClock(ClockSource):
         self._audio_start = time.perf_counter()
 
     def raw_time(self) -> float:
-        # wall-clock since playback started == real audio position
+        # smooth wall-clock since playback started
         return time.perf_counter() - self._audio_start

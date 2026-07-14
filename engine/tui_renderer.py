@@ -67,6 +67,7 @@ def render(
     duration: float | None = None,
     beat_provider=None,
     start_offset: float = 0.0,
+    sync_offset: float = 0.0,
 ) -> None:
     _enable_vt()
     cfg = song.config
@@ -97,7 +98,8 @@ def render(
     term_w, term_h = shutil.get_terminal_size((100, 40))
 
     # start_offset: begin playback + lyrics from a given position (e.g. 1:30)
-    eff_offset = cfg.offset + start_offset
+    # sync_offset: per-machine audio latency calibration (negative = tighter)
+    eff_offset = cfg.offset + start_offset + sync_offset
 
     clock = AudioClock(offset=eff_offset) if audio else ClockSource(offset=eff_offset)
 
@@ -137,12 +139,13 @@ def render(
                 line = sync.active_line(t)
                 word_idx = sync.active_word_index(line, t) if line else -1
                 beat = beat_provider(t) if beat_provider else 0.0
+                progress = sync.progress(t)
 
                 ctx = FrameContext(
                     time=t, song_title=cfg.title, song_artist=cfg.artist,
                     active_line_text=line.text if line else None,
                     active_line_index=idx, total_lines=len(sync.lines),
-                    active_word_index=word_idx, progress=sync.progress(t),
+                    active_word_index=word_idx, progress=progress,
                     ascii_art=art_small, full_ascii=art_full,
                     all_lines=[l.text for l in sync.lines],
                     cover_path=str(song.cover_path() or ""),

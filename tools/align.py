@@ -140,7 +140,7 @@ def main() -> None:
 
     from faster_whisper import WhisperModel
 
-    model_name = os.environ.get("ALIGN_MODEL", "base")
+    model_name = os.environ.get("ALIGN_MODEL", "tiny")
     print(f"[align] loading faster-whisper ({model_name}) — first run downloads model...")
     model = WhisperModel(model_name, device="cpu", compute_type="int8")
     print("[align] transcribing", audio.name)
