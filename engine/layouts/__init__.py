@@ -44,6 +44,43 @@ def _fit(lines: list, h: int, fill: str = " ") -> list:
     return lines + [fill] * (h - len(lines))
 
 
+_ANSI_RE = None
+
+
+def _clip(lines: list, w: int) -> list:
+    """Truncate each raw-ANSI line to a visual width of `w` so nothing spills
+    past the card border (fixes stray strips on the right edge)."""
+    import re as _re
+    global _ANSI_RE
+    if _ANSI_RE is None:
+        _ANSI_RE = _re.compile(r"\x1b\[[0-9;?]*[A-Za-z]")
+    out = []
+    for ln in lines:
+        clean = _ANSI_RE.sub("", ln)
+        if len(clean) <= w:
+            out.append(ln)
+            continue
+        # walk the string keeping ANSI escapes, drop visual chars past w
+        vis = 0
+        buf = []
+        i = 0
+        while i < len(ln):
+            if ln[i] == "\x1b":
+                j = ln.find("m", i)
+                if j == -1:
+                    j = len(ln) - 1
+                buf.append(ln[i:j + 1])
+                i = j + 1
+                continue
+            if vis >= w:
+                break
+            buf.append(ln[i])
+            vis += 1
+            i += 1
+        out.append("".join(buf))
+    return out
+
+
 def _lyric(ctx: FrameContext, text: str | None = None) -> Text:
     t = text if text is not None else (ctx.active_line_text or "")
     r = Text()
@@ -364,27 +401,27 @@ class LayoutVertical(BaseLayout):
             llines, _ = left_with_rain(str(left_img), col_w, ctx.time, height=H)
         else:
             llines, _ = ([], "pillow")
-        left_render = _ansi(llines) if llines else Text(" ")
+        left_render = _ansi(_clip(llines, col_w)) if llines else Text(" ")
         left = Panel(left_render, border_style=gold, title="🌧 MERRA",
                      padding=(0, 1), width=col_w, height=H)
 
-        # ---- MIDDLE: current lyric line ONLY (plain, centred) --------
+        # ---- MIDDLE: lyric as BOLD TERMINAL TEXT (always crisp/readable at
+        #           any size; chafa block-art is for photos, not reading) ----
         idx = ctx.active_line_index if ctx.active_line_index >= 0 else 0
         all_lines = ctx.all_lines
         active = all_lines[idx] if 0 <= idx < len(all_lines) else "♪"
         from rich.align import Align
-        # no per-word color, no neighbours — just the line being sung, centered
         lyric_block = Align(
             Text(active, style=f"bold {cream}", overflow="fold"),
             align="center", vertical="middle",
         )
         mid_panel = Panel(lyric_block, border_style=gold, title="♪ NOW PLAYING",
-                          title_align="left", padding=(0, 1), width=col_w, height=H)
+                          title_align="left", padding=(2, 1), width=col_w, height=H)
 
         # ---- RIGHT: single cover image with subtle motion, stretched ----
         if ctx.cover_path:
             cover_lines, _ = cover_with_fx(str(ctx.cover_path), col_w, H, ctx.time)
-            cover_render = _ansi(cover_lines) if cover_lines else Text(" ")
+            cover_render = _ansi(_clip(cover_lines, col_w)) if cover_lines else Text(" ")
         else:
             cover_render = Text(" ")
         cover_render.no_wrap = True
@@ -425,8 +462,118 @@ class LayoutVertical(BaseLayout):
         return outer
 
 
+# 14. Full — FULLSCREEN showcase: opens in its own maximized terminal.
+# LYRIC (big chafa, left) | COVER (big chafa, right). Bottom panel shows the
+# live JSON timing data (title/artist/layout/theme + upcoming lines w/ stamps)
+# plus a game-style status bar (progress / waveform / time). Built for phone
+# recording — big, high-contrast, no tiny text.
+class LayoutFull(BaseLayout):
+    name = "full"
+
+    def render(self, ctx: FrameContext):
+        import json
+        from pathlib import Path
+        from rich.align import Align
+        from engine.ascii_art import big_lyric, cover_with_fx
+        from engine.layouts.helpers import progress_bar, waveform
+
+        gold = ctx.theme.teal
+        cream = ctx.theme.pastel_yellow
+        dim = ctx.theme.dim_style
+        red = ctx.theme.portal_red
+
+        W = ctx.width
+        H = ctx.height
+        # Two EQUAL columns (lyric | cover) so neither looks cut off.
+        # 1-char gap between them; each column = (W-1)//2.
+        left_w = (W - 1) // 2
+        right_w = W - left_w - 1
+        head_h = 1                      # title bar
+        foot_h = 11                     # JSON data panel
+        body_h = H - head_h - foot_h - 2   # -2 slack for Group/Columns overhead
+
+        # ---- HEADER (game HUD style) ----
+        title_bar = Text()
+        title_bar.append("● ", style=f"bold {red}")
+        title_bar.append(ctx.song_title.upper(), style=f"bold {cream}")
+        title_bar.append(f"   {ctx.song_artist}", style=dim)
+
+        # ---- LEFT: BIG chafa lyric (full-screen => roomy => crisp) ----
+        # Wrapped in Align(center) so it stays centred inside the card even
+        # when chafa's output width differs slightly from the column width.
+        idx = ctx.active_line_index if ctx.active_line_index >= 0 else 0
+        all_lines = ctx.all_lines
+        active = all_lines[idx] if 0 <= idx < len(all_lines) else "♪"
+        llines = big_lyric(active, width=left_w, height_chars=body_h,
+                           fg=(241, 227, 195), size=max(48, body_h * 3))
+        _lyr = _ansi(llines) if llines else Text(active, style=f"bold {cream}")
+        _lyr.no_wrap = True
+        left_render = Align(_lyr, align="center", vertical="middle")
+        left_panel = Panel(left_render, border_style=gold, title="♪ LYRIC",
+                           title_align="left", padding=(0, 0),
+                           width=left_w, height=body_h)
+
+        # ---- RIGHT: BIG cover (full height), equal width, not clipped ----
+        if ctx.cover_path:
+            cover_lines, _ = cover_with_fx(str(ctx.cover_path), right_w, body_h, ctx.time)
+            cover_render = _ansi(cover_lines) if cover_lines else Text(" ")
+        else:
+            cover_render = Text(" ")
+        cover_render.no_wrap = True
+        right_panel = Panel(cover_render, border_style=gold, title=ctx.song_title,
+                            title_align="left", padding=(0, 0),
+                            width=right_w, height=body_h)
+
+        body = Columns([left_panel, right_panel], padding=(1, 0), align="left")
+
+        # ---- FOOTER: live JSON timing data + status ----
+        jp = Path(ctx.cover_path).parent / "lyrics_aligned.json" if ctx.cover_path else None
+        try:
+            data = json.loads(jp.read_text(encoding="utf-8")) if jp and jp.exists() else {}
+        except Exception:
+            data = {}
+        jlines = data.get("lyrics", [])
+        total = jlines[-1]["end"] if jlines else 0.0
+        # upcoming lines (current + next 2) with timestamps
+        up = []
+        for j in range(idx, min(idx + 3, len(all_lines))):
+            st = jlines[j]["start"] if j < len(jlines) else 0.0
+            en = jlines[j]["end"] if j < len(jlines) else 0.0
+            tag = "▶" if j == idx else " "
+            up.append(f"{tag} {st:6.2f}-{en:6.2f}  {all_lines[j][:42]}")
+        ts = f"{int(ctx.time // 60)}:{int(ctx.time % 60):02d}"
+        ttot = f"{int(total // 60)}:{int(total % 60):02d}"
+        bar = progress_bar(ctx.progress, width=max(12, right_w - 26))
+        wave = waveform(ctx.beat if ctx.beat else (ctx.progress * 3 % 1), width=12)
+
+        meta = Text()
+        meta.append(f"SONG : {ctx.song_title}\n", style=f"bold {cream}")
+        meta.append(f"ARTIST: {ctx.song_artist}\n", style=dim)
+        meta.append(f"LAYOUT: {ctx.song_id}\n", style=dim)
+        meta.append(f"THEME : {getattr(ctx.theme, 'name', 'n/a')}\n", style=dim)
+        meta.append(f"LINES : {len(all_lines)}\n", style=dim)
+        meta.append(f"TIME  : {ts} / {ttot}  [{int(ctx.progress*100)}%]", style=gold)
+
+        up_text = Text("\n".join(up), style=cream)
+        status = Text()
+        status.append(wave + "  ", style=gold)
+        status.append(bar, style=gold)
+
+        foot_inner = Columns(
+            [meta, Align(up_text, vertical="top")],
+            padding=(2, 4), align="left",
+        )
+        foot_panel = Panel(
+            Group(foot_inner, Text(""), status),
+            border_style=gold, title="◈ DATA • lyrics_aligned.json",
+            title_align="left", padding=(1, 1), width=W, height=foot_h,
+        )
+
+        return Group(title_bar, body, foot_panel)
+
+
 # Register all
 for _c in (LayoutSplit, LayoutWatermark, LayoutGrid, LayoutPortal, LayoutFocus,
           LayoutMatrix, LayoutCLI, LayoutCinematic, LayoutSyntax, LayoutKinetic,
-          LayoutPoster, LayoutEditor, LayoutVertical):
+          LayoutPoster, LayoutEditor, LayoutVertical, LayoutFull):
     LayoutRegistry.register(_c.name, _c)

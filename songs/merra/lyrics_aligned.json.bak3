@@ -669,7 +669,7 @@
     },
     {
       "start": 90.162,
-      "end": 92.00,
+      "end": 93.818,
       "text": "And now I'm so low",
       "words": [
         {
@@ -700,101 +700,94 @@
       ]
     },
     {
-      "text": "Can you tell me is it hard for you",
-      "start": 92.00,
-      "end": 96.00,
+      "start": 93.818,
+      "end": 106.517,
+      "text": "Can you tell me is it hard for you to give me just last one chance?",
       "words": [
         {
           "text": "Can",
-          "start": 93.818,
-          "end": 100.36
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "you",
-          "start": 93.818,
-          "end": 100.36
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "tell",
-          "start": 93.818,
-          "end": 100.36
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "me",
-          "start": 93.818,
-          "end": 100.36
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "is",
-          "start": 93.818,
-          "end": 100.36
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "it",
-          "start": 93.818,
-          "end": 100.36
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "hard",
-          "start": 93.818,
-          "end": 100.36
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "for",
-          "start": 93.818,
-          "end": 100.36
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "you",
-          "start": 93.818,
-          "end": 100.36
-        }
-      ]
-    },
-    {
-      "text": "to give me just last one chance?",
-      "start": 96.00,
-      "end": 107.517,
-      "words": [
+          "start": 95.818,
+          "end": 107.517
+        },
         {
           "text": "to",
-          "start": 100.36,
-          "end": 106.517
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "give",
-          "start": 100.36,
-          "end": 106.517
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "me",
-          "start": 100.36,
-          "end": 106.517
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "just",
-          "start": 100.36,
-          "end": 106.517
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "last",
-          "start": 100.36,
-          "end": 106.517
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "one",
-          "start": 100.36,
-          "end": 106.517
+          "start": 95.818,
+          "end": 107.517
         },
         {
           "text": "chance?",
-          "start": 100.36,
-          "end": 106.517
+          "start": 95.818,
+          "end": 107.517
         }
       ]
     },
     {
-      "start": 107.517,
+      "start": 106.517,
       "end": 111.636,
       "text": "When every time you say we're done",
       "words": [
@@ -1126,7 +1119,7 @@
     },
     {
       "start": 146.734,
-      "end": 149.8,
+      "end": 149.80,
       "text": "And now I'm so low",
       "words": [
         {
@@ -1157,7 +1150,7 @@
       ]
     },
     {
-      "start": 149.8,
+      "start": 149.80,
       "end": 162.09,
       "text": "Can you tell me is it hard for you to give me just last one chance?",
       "words": [

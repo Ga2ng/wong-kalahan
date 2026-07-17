@@ -177,7 +177,7 @@ def left_with_rain(photo_path: str, width: int, t: float, seed: int = 7,
 
 
 def big_lyric(text: str, width: int, height_chars: int, font_path: str | None = None,
-              fg: tuple[int, int, int] = (233, 196, 106)) -> list[str]:
+              fg: tuple[int, int, int] = (233, 196, 106), size: int = 24) -> list[str]:
     """Render the active lyric in a BIG TTF font, centered, filling the
     column, and return chafa ANSI. This gives a large 'pixel font' look in
     the terminal center (not just bold rich text). Cached per (text,w,h)."""
@@ -194,10 +194,10 @@ def big_lyric(text: str, width: int, height_chars: int, font_path: str | None = 
     # render at high res, scale to terminal aspect
     px_w = width * 8
     px_h = height_chars * 16
-    img = Image.new("RGB", (px_w, px_h), (20, 6, 6))  # maroon-ish bg
+    img = Image.new("RGB", (px_w, px_h), (0, 0, 0))  # black bg (HP-record friendly)
     d = ImageDraw.Draw(img)
     # pick a font size that fits width with wrapping
-    size = 64
+    size = size
     font = ImageFont.truetype(font_path, size) if font_path else ImageFont.load_default()
     # wrap words
     words = text.split()

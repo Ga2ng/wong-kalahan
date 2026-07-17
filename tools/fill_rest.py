@@ -1,28 +1,34 @@
-"""Fill timing for lines AFTER the user's manual edit (line 13..end) using a
-proportional model: total remaining time (79.00 -> song end) is split across
-the remaining lines in proportion to their word counts (longer lines get more
-time). Lines 0..12 are LEFT UNTOUCHED (user-edited). Also guarantees the last
-line ends exactly at the audio duration, and end >= start with a small gap.
+"""Fill timing for lines AFTER the user's manual edit using a proportional
+model: total remaining time (anchor -> song end) is split across the
+remaining lines in proportion to their word counts (longer lines get more
+time). Lines before the anchor are LEFT UNTOUCHED. The last line ends exactly
+at the audio duration.
+
+Usage:
+  tools/fill_rest.py            # fill from default anchor (79.00)
+  tools/fill_rest.py --from 162.09   # fill from line 33's end (user edited up to there)
 """
-import json, re
+import json, re, argparse
 from pathlib import Path
 
 p = Path("songs/merra/lyrics_aligned.json")
-bak = p.with_suffix(".json.bak2")
+bak = p.with_suffix(".json.bak3")
 bak.write_bytes(p.read_bytes())
 print("[fill] backup ->", bak.name)
 
-ANCHOR_START = 79.00          # user's last manual end (line 12)
+ap = argparse.ArgumentParser()
+ap.add_argument("--from", dest="anchor", type=float, default=79.00,
+                help="anchor seconds: lines at/after this start get filled")
+args = ap.parse_args()
+ANCHOR_START = args.anchor
+
 data = json.load(open(p, encoding="utf-8"))
 lyrics = data["lyrics"]
 
-# audio duration from the last line's end
 song_end = max(ln["end"] for ln in lyrics)
 print(f"[fill] song_end={song_end:.2f}, fill from {ANCHOR_START:.2f}")
 
-# find first line to fill (first line whose start >= ANCHOR_START)
 start_idx = next(i for i, ln in enumerate(lyrics) if ln["start"] >= ANCHOR_START)
-# ensure line[start_idx-1].end == ANCHOR_START
 lyrics[start_idx - 1]["end"] = round(ANCHOR_START, 3)
 
 rest = lyrics[start_idx:]
@@ -36,9 +42,7 @@ for ln, w in zip(rest, n_words):
     ln["start"] = round(t, 3)
     t += dur
     ln["end"] = round(t, 3)
-# clamp final to song_end exactly
 rest[-1]["end"] = round(song_end, 3)
-# sync words start/end to their line (words already == text tokens)
 for ln in rest:
     for wk in ln.get("words", []):
         wk["start"] = ln["start"]
