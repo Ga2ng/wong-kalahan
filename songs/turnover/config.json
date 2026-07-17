@@ -1,0 +1,23 @@
+{
+  "id": "turnover",
+  "title": "Turnover",
+  "artist": "Turnover",
+  "album": "Turnover",
+  "artist_label": "Turnover",
+  "about": "A melancholic, atmospheric record — slow, grey, grieving. Rendered here as a dark pixel-art cover animation (no lyrics).",
+  "monthly_listeners": "",
+  "layout": "turnover",
+  "theme": "merra",
+  "offset": 0.0,
+  "fps": 30,
+  "cover": "cover.jpeg",
+  "left_section": null,
+  "about_image": null,
+  "background": null,
+  "font": null,
+  "lyrics": null,
+  "lyrics_aligned": null,
+  "background_mode": "static",
+  "effects": [],
+  "mode": "cover_animation"
+}

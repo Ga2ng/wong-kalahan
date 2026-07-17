@@ -73,7 +73,12 @@ def render(
     cfg = song.config
     fps = fps or cfg.fps
 
-    lyrics = load_lyrics(str(song.lyrics_path()))
+    lyrics = load_lyrics(str(song.lyrics_path())) if song.lyrics_path() else None
+    if lyrics is None:
+        # Pure-visual song (no timed lyrics) — e.g. cover-art animations.
+        # Use an empty lyrics container so SyncEngine has something to read.
+        from engine.config_schema import LyricsFile
+        lyrics = LyricsFile(lyrics=[])
     sync = SyncEngine(lyrics)
     LayoutCls = LayoutRegistry.get(cfg.layout)
     ThemeCls = ThemeRegistry.get(cfg.theme)

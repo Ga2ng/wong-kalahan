@@ -18,5 +18,6 @@
   "lyrics": "lyrics.json",
   "lyrics_aligned": "lyrics_aligned.json",
   "background_mode": "static",
-  "effects": ["glow"]
+  "effects": ["glow"],
+  "mode": "lyric_audio"
 }

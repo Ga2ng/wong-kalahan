@@ -338,3 +338,54 @@ def cover_with_fx(path: str, width: int, height: int, t: float,
         _COVERFX_CACHE.clear()
     _COVERFX_CACHE[_k] = res
     return res
+
+
+# Per-session cache so the "sad" cover isn't re-chafa'd every frame.
+_SAD_CACHE: dict = {}
+
+
+def cover_sad(path: str, width: int, height: int, t: float,
+              seed: int = 23) -> tuple[list[str], str]:
+    """Pixel-art cover animation in FULL COLOR (no desaturation). A slow, thin
+    RAIN drifts over the original artwork so it feels like a living music
+    video frame. CONTAINED on black, no border. Cached per ~0.2s bucket."""
+    import math
+    import random
+    from PIL import ImageDraw
+    bucket = int(t * 5)  # ~5fps (slow, mournful)
+    _k = (path, width, height, bucket)
+    if _k in _SAD_CACHE:
+        return _SAD_CACHE[_k]
+    rng = random.Random(seed)
+    img = Image.open(path).convert("RGB")
+    # CONTAIN: keep aspect ratio, centre on a black card
+    cw, ch = width * 8, height * 16
+    canvas = Image.new("RGB", (cw, ch), (0, 0, 0))
+    scale = min(cw / img.width, ch / img.height)
+    nw, nh = max(1, int(img.width * scale)), max(1, int(img.height * scale))
+    img = img.resize((nw, nh), Image.LANCZOS)
+    canvas.paste(img, ((cw - nw) // 2, (ch - nh) // 2))
+    img = canvas
+    w, hh = img.size
+    # thin slow rain over the FULL-COLOR artwork (keeps it alive, not grey)
+    overlay = Image.new("RGBA", (w, hh), (0, 0, 0, 0))
+    d = ImageDraw.Draw(overlay)
+    for c in range(0, w, 7):
+        speed = rng.uniform(0.25, 0.6)
+        offset = rng.uniform(0, hh)
+        head = int((t * speed * 9 + offset)) % (hh + 30)
+        length = rng.randint(5, 11)
+        for k in range(length):
+            y = head - k
+            if 0 <= y < hh:
+                a = int(90 * (1 - k / length)) + 20
+                d.line([(c, y), (c, y)], fill=(150, 170, 200, a), width=1)
+    img = img.convert("RGBA")
+    img.alpha_composite(overlay)
+    img = img.convert("RGB")
+    res = pil_to_ascii(img, width, work=6)
+    if len(_SAD_CACHE) > 30:
+        _SAD_CACHE.clear()
+    _SAD_CACHE[_k] = res
+    return res
+

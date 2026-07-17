@@ -20,13 +20,16 @@ class Song:
     def config_path(self) -> Path:
         return self.folder / "config.json"
 
-    def lyrics_path(self) -> Path:
-        # Prefer aligned lyrics if present, else the declared lyrics file
+    def lyrics_path(self) -> Path | None:
+        # Prefer aligned lyrics if present, else the declared lyrics file.
+        # A song with neither (pure-visual) returns None.
         if self.config.lyrics_aligned:
             p = self.folder / self.config.lyrics_aligned
             if p.exists():
                 return p
-        return self.folder / self.config.lyrics
+        if self.config.lyrics:
+            return self.folder / self.config.lyrics
+        return None
 
     def cover_path(self) -> Path | None:
         if self.config.cover:

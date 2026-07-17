@@ -572,8 +572,43 @@ class LayoutFull(BaseLayout):
         return Group(title_bar, body, foot_panel)
 
 
+# 15. Turnover — PURE cover animation (no lyrics). The album cover is rendered
+# via chafa in FULL COLOR (no border, no grayscale) like a living pixel-art
+# music-video frame, with slow rain drifting over it. A small "Pixel Turnover"
+# caption sits below with no box. Built for a moody song; loops as pixel art.
+class LayoutTurnover(BaseLayout):
+    name = "turnover"
+
+    def render(self, ctx: FrameContext):
+        from engine.ascii_art import cover_sad
+        from rich.align import Align
+
+        W = ctx.width
+        H = ctx.height
+        # Cover fills most of the screen; a slim caption row at the bottom.
+        # chafa auto-sizes height by aspect, so leave slack for the caption.
+        cover_h = max(10, H - 5)
+        cover_w = max(20, W - 2)
+
+        if ctx.cover_path:
+            lines, _ = cover_sad(str(ctx.cover_path), cover_w, cover_h, ctx.time)
+            cover_render = _ansi(lines) if lines else Text(" ")
+        else:
+            cover_render = Text(" ")
+        cover_render.no_wrap = True
+
+        # caption: "Pixel Turnover" — no border, centered, dim gold
+        caption = Text()
+        caption.append("Pixel ", style=f"bold {ctx.theme.pastel_yellow}")
+        caption.append(ctx.song_title, style=f"bold {ctx.theme.pastel_yellow}")
+        cap_centered = Align(caption, align="center")
+
+        body = Group(cover_render, cap_centered)
+        return body
+
+
 # Register all
 for _c in (LayoutSplit, LayoutWatermark, LayoutGrid, LayoutPortal, LayoutFocus,
           LayoutMatrix, LayoutCLI, LayoutCinematic, LayoutSyntax, LayoutKinetic,
-          LayoutPoster, LayoutEditor, LayoutVertical, LayoutFull):
+          LayoutPoster, LayoutEditor, LayoutVertical, LayoutFull, LayoutTurnover):
     LayoutRegistry.register(_c.name, _c)

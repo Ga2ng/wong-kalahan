@@ -35,7 +35,7 @@ class SongConfig(pydantic.BaseModel):
     id: str
     title: str
     layout: str
-    lyrics: str
+    lyrics: Optional[str] = None  # None = pure-visual song (no timed lyrics)
 
     # Optional with sensible fallbacks
     artist: str = "Unknown Artist"
@@ -53,6 +53,10 @@ class SongConfig(pydantic.BaseModel):
     font: Optional[str] = None
     background_mode: str = "static"
     effects: List[str] = pydantic.Field(default_factory=list)
+    # Project "mode" — declares the kind of experience this song folder is.
+    # e.g. "lyric_audio" (Merra), "cover_animation" (Turnover), or any future
+    # model. Pure metadata today; lets main.py/engine branch per project type.
+    mode: Optional[str] = None
 
     # Secondary lyrics file (for aligned timestamps produced by tools/align.py)
     lyrics_aligned: Optional[str] = None
